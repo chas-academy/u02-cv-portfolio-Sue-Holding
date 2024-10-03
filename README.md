@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/yc0nwklt)
+# This is my professional site for my CV and portfolio.
+
+It will contain all my previous work and educational history as well as links to my *GitHub repositories* and *Linked In* profile.
+
+This file will be a continous working project.
