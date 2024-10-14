@@ -1,42 +1,96 @@
 <!DOCTYPE html>
-<style>
-    caption, table, tr, td {
-        border: 2px solid rgb(200,200,200);}
-</style>
-<html lang="svenska">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Susanna Holding's CV and Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
 
 <body>
-<header>
-    <h1>Susanna Holding's CV and Portfolio</h1>
-    <h2>Future Webutvecklare och administration proffs som studerar <a href="https://chasacademy.se/program/fullstackutvecklare-opensource">Full Stack Open Source på Chas Academy</a></h2>
-    <address>
-        <p>Malstensgränd 6 <br>
-            Jakobsberg, Järfalla <br>
-            Stockholm, 17741 <br>
-            <a href="+46762175946">+46 (0)76 217 5946</a><br>
-            <a href="sue.holding55@gmail.com">sue.holding55@gmail.com</a><br>
-        </p>
-    </address>
-</header><hr>
 
-<section>
-    <h2>PROFILE</h2>
-    <p>Hej, Susanna heter jag. Jag är en halvsvensk, 36 årig professionell kvinna med en backgrund i Försäjlningen och management
-        med jobs erfarenhet och utbildning.<br>
-        Jag har över 15 års erfarenhet i detta ömråde och flyttade till Stockholm i 2016 för att utveckla mig i svenska ekonomi, språk och kultur.<br>
-        Jag bör i Järfalla samt med min man och vår lilla dotter och vill bygga på ett liv som passa ihop med hemma och joblivet.<br>
+<header class="header-grid">
+    <picture>
+    <source media="(max-width: 390px)" srcset="media/sue-150w.jpg">
+    <source media="(min-width: 1280px)" srcset="media/sue-250w.jpg">
+    <img class="photo" src="media/sue-150w.jpg"
+        alt="Susanna Holding">
+    </picture>
 
-    </p>
-</section><hr>
+<div class="header-text">
+        <h2 class="resume">Resume</h2>
+        <h1 class="name">SUSANNA HOLDING</h1>
+</div>
+<div class="intro-text">
+    	<h2 class="title">WEBUTVECKLARE | ADMINISTRATION | SALES MANAGER</h2>
+        <h2 class="about-me">En begåvad och driven kvinna med kvalifikationer inom webbdesign,
+            affärs- och försäljningschef, som vill utveckla sina färdigheter under en LIA-lärlingsutbildning
+            i Front end Development.
+            <br>Studerar just nu
+            <a href="https://chasacademy.se/program/fullstackutvecklare-opensource">Full Stack Open Source</a>
+            på Chas Academy.</h2>
+</div>
 
-<section>
-    <h2>ERFARENHET</h2>
-    <section>
+</header>
+<nav class="nav-bar-flex">
+    <a href="#education">Utbilding</a>
+    <a href="#softwear-skills">Färdigheter i Softwear</a>
+    <a href="#works">Erferenhet</a>
+    <a href="#skills">Kompetenser</a>
+    <a href="#languages">Språk</a>
+    <a href="#video">Video</a>
+    <a href="#contact-me">Kontakta Mig</a>
+    <a href="#follow-me">Följ Mig</a>
+</nav>
+
+
+
+<div class="grid-container">
+<table class="education" id="education">
+    <caption>UTBILDNING</caption>
+    <tbody>
+        <tr>
+            <td rowspan="1">SEPT 2024 ongoing</td>
+            <td>Chas Academy</td>
+            <td>Full Stack Open Source</td>
+        </tr>
+        <tr>
+            <td rowspan="1">DEC 2023</td>
+            <td>Komvux</td>
+            <td>Programmering 1</td>
+        </tr>
+        <tr>
+            <td rowspan="4">month year</td>
+            <td rowspan="5">Advanced Education</td>
+        </tr>
+        <tr>
+            <td>Business</td>
+        </tr>
+        <tr>
+            <td>Sales</td>
+        </tr>
+        <tr>
+            <td>Customer Services</td>
+        </tr>
+    </tbody>
+</table>
+
+<section class="softwear-skills" id="softwear-skills">
+    <h2 class="special">FÄRDIGHETER I SOFTWEAR</h2>
+        <ul>
+            <li>VS Code</li>
+            <li>GitHub</li>
+            <li>Figma</li>
+            <li>CRM databases</li>
+            <li>Microsoft <sup>TM</sup> (Word, Excel, Powerpoint)</li>
+            <li></li>
+            <li></li>
+        </ul>
+</section>
+
+<section class="work" id="work">
+    <h2 class="special">ERFARENHET</h2>
         <h3>CALZEDONIA, Stockholm - <em>Butikschef</em></h3>
         <p>MAI 2017 - JUNI 2024</p>
         <ul>
@@ -45,9 +99,7 @@
             <li>Förstå kundernas krav och säkerställa butiks och lagerorganisation för att levera detta</li>
             <li>Se till att pristine butiksvisualisering sker dagligen</li>
         </ul>
-
-    </section>
-    <section>
+        <br>
         <h3>CARNIVAL, Southampton - <em>Säljteamledare</em></h3>
         <p>DECEMBER 2013 - FEBRUARI 2016</p>
         <ul>
@@ -56,90 +108,79 @@
             <li>Inblanding av ledande förvörv för taktisk och strategisk försäjlning baserad på analys av nuvarande försäjlningskrav</li>
             <li>Under denna roll genomförde jag också den logistiska planering av att delta i olika kryssningsskådor över hela landet</li>
         </ul>
-    </section>
-    <section>
-        <h3>CARNIVAL, Southampton - <em>Resetelefonsäljare</em></h3>
-        <p>APRIL 2008 - NOVEMBER 2013</p>
-    </section>
-    <section>
-        <h3>CARNIVAL, Southampton - <em>Evenemangsassisant</em></h3>
-        <p>NOVEMBER 2009 - JUNI 2010</p>
-    </section>
-    <section>
-        <h3>TUI, Hampshire - <em>Resesäljare</em></h3>
-        <p>SEPTEMBER 2006 - MARS 2008</p>
-    </section>
-</section><hr>
+</section>
 
-<table>
-    <caption><strong>UTBILDNING</strong></caption>
-    <thead>
-        <tr>
-            <th scope="col">KURS NAMN</th>
-            <th scope="col">AMNE</th>
-            <th scope="col">DATUM</th>
-            <th scope="col">BETYG</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>PROGRAMMERING</td>
-            <td>Programmering 1</td>
-            <td>DEC 2023</td>
-            <td>D</td>
-        </tr>
-        <tr>
-            <td>SVENSKA</td>
-            <td>Svenska 1</td>
-            <td>MAI 2023</td>
-            <td>D</td>
-        </tr>
-        <tr>
-            <td rowspan="4">NATIONAL VOCATIONAL QUALIFICATION (NVQ)</td>
-            <td>Customer Services levels 2 and 3</td>
-            <td rowspan="4">2008 - 2011</td>
-            <td>PASS / PASS</td>
-        </tr>
-        <tr>
-            <td>Travel and Tourism levels 2 and 3</td>
-            <td>DISTINCTION / PASS</td>
-        </tr>
-        <tr>
-            <td>Leisure and Business level 2</td>
-            <td>PASS</td>
-        </tr>
-        <tr>
-            <td>Sales level 3</td>
-            <td>PASS</td>
-        </tr>
-        <tr>
-            <td colspan="2">GENERAL CERTIFICATE EDUCATION ADVANCED (AS/A2)</td>
-            <td>2004 - 2006</td>
-            <td>A - D</td>
-        </tr>
-        <tr>
-            <td colspan="2">GENERAL CERTIFICATE SECONDARY EDUCATION (GCSE)</td>
-            <td>2001 - 2004</td>
-            <td>A - C</td>
-        </tr>
-    </tbody>
-    </table>
-<hr>
+<section class="skills" id="skills">
+    <h2 class="special">KOMPETENSER</h2>
+        <ul>
+            <li>Prestationshantering</li>
+            <li>Lagledare</li>
+            <li>Coachning</li>
+            <li>Kontor administration</li>
+            <li>Evenemang administration</li>
+            <li>Rekrytering</li>
+            <li>Kundservice</li>
+            <li>Självmotivarande</li>
+            <li>Van att jobba under press</li>
+        </ul>
+</section>
 
-<section>
-    <h2>NYCKEL KUNDSKAPER OCH KOMPETENSER</h2>
+<section class="languages" id="languages">
+    <h2 class="special">SPRÅK</h2>
     <ul>
-        <li>Prestationshantering och bedömningar</li>
-        <li>Evenemang administration</li>
-        <li>Rekrytering</li>
-        <li>Kundservice</li>
-        <li>Självmotivarande</li>
-        <li>Van att jobba under press</li>
-        <li>Behörigi alla Microsoft office program</li>
         <li>Engelska (första språk)</li>
         <li>Svenska (andra språk)</li>
+        <li>Ryska (pågående)</li>
     </ul>
 </section>
 
+<div class="video" id="video">
+<video
+    controls
+    width="auto"
+    loop
+    muted >
+    <source media="(max-width: 390px)" srcset="media/video/mp4">
+    <source media="(min-width: 1280px)" srcset="media/video/mp4.jpg">
+    <source src="mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<section class="contact-me" id="contact-me">
+    <h2 class="special">TA KONTAKT MED MIG</h2>
+    <a href="tel:+46762175946"><img src="media/mobile-logo.png"
+    alt="mobile logo"
+    width="50"
+    height="auto"
+    ></a>
+<a href="tel:+46762175946">+46(0)&nbsp;76&nbsp;217&nbsp;5946</a><br>
+
+<a href="mailto:sue.holding55@gmail.com"><img src="media/email-logo.png"
+    alt="email logo"
+    width="50"
+    height="auto"
+    ></a>
+<a href="mailto:sue.holding55@gmail.com">sue.holding55@gmail.com</a><br>
+</section>
+
+<section class="follow-me" id="follow-me">
+    <h2 class="special">FÖLJ MIG PÅ</h2>
+
+<a href="https://www.linkedin.com/in/susanna-holding-a4b14643/"><img src="media/linkedin-logo.png"
+    alt="linked in logo"
+    width="200"
+    height="auto"
+    ></a>
+<br>
+
+<a href="https://github.com/Sue-Holding"><img src="media/github-logo.png"
+    alt="github logo"
+    width="200"
+    height="auto"
+    ></a>
+</section>
+
+</div> <!--div end tag for main grid container-->
 </body>
 </html>
