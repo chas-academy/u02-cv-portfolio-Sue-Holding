@@ -1,0 +1,107 @@
+body {
+    font-size: 16px;
+    width: auto;
+}
+
+header {
+    color:white;
+    background-color:  #BB8588; 
+    width: 100%;
+    height: 100%;
+    padding: 20px; 
+}
+
+.header-grid { /*header gradiant styling */
+    background: linear-gradient(rgb(200,200,200), #BB8588); 
+}
+
+.about-me, .title  {
+    text-align: center;
+    color: white;
+}
+
+.resume, .name, .title {
+    color: white;
+}
+
+tr, td {
+    border: 2px solid rgb(200,200,200);}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: auto;
+    padding: 5px;
+}
+
+tbody {
+    padding: 5px;
+}
+
+.name {
+    padding-top: 50px;
+}
+
+p, li, td {
+    color:rgb(107, 107, 107);
+}
+
+a {
+    color:blueviolet;
+}
+
+section {
+    padding: 20px;
+}
+
+caption {
+    font-size: 150%;
+    font-weight: bold;
+    color: #af6b6e;
+    text-align: left;
+    
+    padding-left: 20px;
+}
+
+.special, h2, h3 {
+    color: #af6b6e;
+}
+
+a {
+    color: white;
+}
+
+section > a {
+    color: rgb(107, 107, 107);
+}
+
+
+
+@media (any-hover: hover) {
+    a:hover {
+        color: blueviolet;
+    }
+}
+
+
+/* Flexbox styling */
+
+.nav-bar-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content:space-between; 
+    color:white;
+    background-color: #BB8588; 
+    padding: 20px;
+}
+
+.grid-container {
+    background-color: rgb(225, 225, 225);
+    padding: 20px;
+}
