@@ -1,0 +1,19 @@
+// general stylings for flex and grid containers
+
+.nav-bar-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content:space-between; 
+    color: $projectColorWhite;
+    background-color: $projectColorLightPink; 
+    padding: 20px;
+}
+
+.grid-container {
+    background-color: $projectColorLightGrey;
+    padding: 20px;
+}
