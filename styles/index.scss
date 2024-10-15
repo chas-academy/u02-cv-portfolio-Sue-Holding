@@ -1,6 +1,6 @@
-@import "styles/partials/reset";
-@import "styles/partials/projectColors";
-@import "styles/partials/generalFlexGrid";
+@use "partials/projectColors" as *;
+@use "partials/reset" as *;
+@use "partials/generalFlexGrid" as *;
 
 // sass styling
 // font sizes
