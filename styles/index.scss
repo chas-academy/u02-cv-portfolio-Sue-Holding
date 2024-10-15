@@ -1,14 +1,11 @@
 @use "partials/projectColors" as *;
 @use "partials/reset" as *;
 @use "partials/generalFlexGrid" as *;
+@use "partials/mediaQmobile" as *;
+@use "partials/mediaQLaptop" as *;
+@use "partials/fontSizes" as *;
 
 // sass styling
-// font sizes
-$fontSizeBody: 16px;
-$fontSizeFlexMobile: 16px;
-$fontSizeGridMobile: 12px;
-$fontSizeFlexLaptop: 150%;
-$fontSizeGridMobile: 22px;
 
 body {
     size: $fontSizeBody;
