@@ -1,0 +1,122 @@
+@use "projectColors" as *;
+@use "fontSizes" as *;
+
+// styling for media queries 
+
+// styling for laptop 
+
+// flexbox styling 
+
+@media (min-width: 1280px) {
+    .nav-bar-flex {
+        display: flex;
+        width: 100%;
+        justify-content:space-between; 
+        flex-direction: row;
+        color: $projectColorWhite;
+        background-color: $projectColorLightPink; 
+        padding: 40px;
+        color: $projectColorWhite;
+        font-size: 150%;
+        }
+    } 
+    
+    // grid styling 
+    
+    @media (min-width: 1280px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        background-color: $projectColorLightPink; 
+        padding: 50px;
+        width: auto;
+        size: $fontSizeGridLaptop;
+        }
+    
+    .photo {
+        grid-column: 1/ 2;
+        grid-row: 1 / 2;
+        }
+    
+    .intro-text {
+        grid-column: 1 / 4 ;
+        grid-row: 2 / 3;
+    }
+    
+    .header-text {
+        grid-column: 2 / 4 ;
+        grid-row: 1 / 4;
+        }
+    }
+    
+    @media (min-width: 1280px) {
+    .grid-container  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        padding: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        size: $fontSizeGridLaptop;
+        background-color: $projectColorLightGrey;
+        width: auto;
+        }
+    
+    .education {  // 1st child 
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%; 
+        padding: 20px;
+        }
+    
+    .softwear-skills { // 2nd child 
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 100%;
+        padding: 20px; 
+        }
+    
+    .work { // 3rd child 
+        grid-column: 1 / 2;
+        grid-row: 2 / 5 ;
+        width: 75%;
+        padding: 20px;
+        }
+    
+    .skills { // 4th child 
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 100%;
+        padding: 20px;
+        }
+      
+    .languages { // 5th child 
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        width: 100%;
+        padding: 20px;
+        }
+    
+    .video { // 6th child 
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        width: 100%;
+        padding: 20px;
+        }
+    
+    .contact-me { // 7th child 
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        width: 100%;
+        padding: 20px;
+        }
+    
+    .follow-me { // 8th child 
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+        width: 100%;
+        padding: 20px;
+        }
+    }
