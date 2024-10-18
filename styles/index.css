@@ -11,13 +11,17 @@
   height: auto;
   justify-content: space-between;
   color: white;
-  background-color: #BB8588;
+  background-color: #af6b6e;
   padding: 20px;
 }
 
 .grid-container {
   background-color: rgb(225, 225, 225);
   padding: 20px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 390px) {
@@ -27,7 +31,7 @@
     flex: auto;
     flex-direction: column;
     color: white;
-    background-color: #BB8588;
+    background-color: #af6b6e;
     padding: 20px;
     color: white;
   }
@@ -61,7 +65,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    background-color: #BB8588;
+    background-color: #af6b6e;
     width: 100%;
   }
   .header-grid body {
@@ -187,7 +191,7 @@
     justify-content: space-between;
     flex-direction: row;
     color: white;
-    background-color: #BB8588;
+    background-color: #af6b6e;
     padding: 40px;
     color: white;
   }
@@ -216,7 +220,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    background-color: #BB8588;
+    background-color: #af6b6e;
     padding: 50px;
     width: auto;
   }
@@ -361,14 +365,14 @@ body body {
 
 header {
   color: white;
-  background-color: #BB8588;
+  background-color: #af6b6e;
   width: 100%;
   height: 100%;
   padding: 20px;
 }
 
 .header-grid { /*header gradiant styling */
-  background: linear-gradient(rgb(200, 200, 200), #BB8588);
+  background: linear-gradient(rgb(200, 200, 200), #af6b6e);
 }
 
 .about-me, .title {
@@ -385,7 +389,7 @@ header {
 }
 
 p, li, td {
-  color: rgb(107, 107, 107);
+  color: rgb(79, 78, 78);
 }
 
 a {
@@ -409,7 +413,7 @@ a {
 }
 
 section > a {
-  color: rgb(107, 107, 107);
+  color: rgb(79, 78, 78);
 }
 
 tr, td {

@@ -1,5 +1,5 @@
 @use "projectColors" as *;
-@use "fontSizes";
+@use "fontSizes" as *;
 
 // styling for media queries 
 
@@ -14,10 +14,10 @@
     flex: auto;
     flex-direction: column;
     color: $projectColorWhite;
-    background-color: $projectColorLightPink; 
+    background-color: $projectColorDarkPink; 
     padding: 20px;
     color: $projectColorWhite;
-    @include fontSizes.font-size;
+    font-size: $fontSizeFlexMobile;
     }
 } 
 
@@ -34,9 +34,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    background-color: $projectColorLightPink; 
+    background-color: $projectColorDarkPink; 
     width: 100%;
-    @include fontSizes.font-size;
+    font-size: $fontSizeGridMobile;
     }
 
 .photo {

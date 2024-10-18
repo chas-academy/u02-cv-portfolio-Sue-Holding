@@ -1,10 +1,17 @@
+// font 
+body 
+ {
+  font-family: "Raleway", sans-serif;
+}
+
 // font sizes
-@mixin font-size {
+
 $fontSizeBody: 16px;
 $fontSizeFlexMobile: 16px;
 $fontSizeGridMobile: 12px;
 $fontSizeFlexLaptop: 30px;
 $fontSizeGridLaptop: 22px;
+
 
 body {
     font-size: $fontSizeBody;
@@ -27,4 +34,4 @@ body {
       font-size: $fontSizeGridLaptop;
     }
   }
-}
+
