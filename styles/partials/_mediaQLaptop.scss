@@ -10,6 +10,7 @@
 @media (min-width: 1280px) {
     .nav-bar-flex {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         justify-content:space-between; 
         flex-direction: row;
