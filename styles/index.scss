@@ -3,12 +3,12 @@
 @use "partials/generalFlexGrid" as *;
 @use "partials/mediaQmobile" as *;
 @use "partials/mediaQLaptop" as *;
-@use "partials/fontSizes" as *;
+@use "partials/fontSizes";
 
 // sass styling
 
 body {
-    size: $fontSizeBody;
+    @include fontSizes.font-size;
     width: auto;
 }
 
@@ -22,7 +22,7 @@ header {
 
 // class styling
 .header-grid { /*header gradiant styling */
-    background: linear-gradient ($projectColorDirtyWhite, $projectColorLightPink); 
+    background: linear-gradient($projectColorDirtyWhite, $projectColorLightPink); 
 }
 
 .about-me, .title  {

@@ -1,5 +1,5 @@
 @use "projectColors" as *;
-@use "fontSizes" as *;
+@use "fontSizes";
 
 // styling for media queries 
 
@@ -17,7 +17,7 @@
     background-color: $projectColorLightPink; 
     padding: 20px;
     color: $projectColorWhite;
-    font-size: 16%;
+    @include fontSizes.font-size;
     }
 } 
 
@@ -36,22 +36,22 @@
     grid-template-rows: repeat(2, 1fr);
     background-color: $projectColorLightPink; 
     width: 100%;
-    size: $fontSizeGridMobile;
+    @include fontSizes.font-size;
     }
 
 .photo {
-    grid-template-columns: 1 / 2;
-    grid-template-rows: 1 / 2;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     }
 
 .header-text {
-    grid-template-columns: 2 / 3;
-    grid-template-rows: 1 / 2;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 2fr;
     }
 
 .intro-text {
-    grid-template-columns: 1 / 3;
-    grid-template-rows: 2 / 3;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 3fr;
     }
 }
 
@@ -64,7 +64,7 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    size: $fontSizeGridMobile;
+    @include fontSizes.font-size;
     background-color: $projectColorLightGrey;
     width: 100%;
     }

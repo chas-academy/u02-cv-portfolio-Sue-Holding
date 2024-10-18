@@ -1,6 +1,30 @@
 // font sizes
+@mixin font-size {
 $fontSizeBody: 16px;
 $fontSizeFlexMobile: 16px;
 $fontSizeGridMobile: 12px;
-$fontSizeFlexLaptop: 150%;
+$fontSizeFlexLaptop: 30px;
 $fontSizeGridLaptop: 22px;
+
+body {
+    font-size: $fontSizeBody;
+    }
+
+@media (max-width: 390px) {
+    .flex {
+      font-size: $fontSizeFlexMobile;
+    }
+    .grid {
+      font-size: $fontSizeGridMobile;
+    }
+    }
+
+  @media (min-width: 1280px) {
+    .flex {
+      font-size: $fontSizeFlexLaptop;
+    }
+    .grid {
+      font-size: $fontSizeGridLaptop;
+    }
+  }
+}
