@@ -1,5 +1,5 @@
 @use "projectColors" as *;
-@use "fontSizes" as *;
+@use "fontSizes" as font-size;
 
 // styling for media queries 
 
@@ -17,7 +17,7 @@
         background-color: $projectColorDarkPink; 
         padding: 40px;
         color: $projectColorWhite;
-        font-size: $fontSizeFlexLaptop;
+        font-size: font-size.$fontSizeFlexLaptop;
         }
     } 
     
@@ -31,7 +31,7 @@
         background-color: $projectColorDarkPink; 
         padding: 50px;
         width: auto;
-        font-size: $fontSizeGridLaptop;
+        font-size: font-size.$fontSizeGridLaptop;
         }
     
     .photo {
@@ -59,7 +59,7 @@
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 50px;
-        @include fontSizes.font-size;
+        font-size: $fontSizeGridLaptop;
         background-color: $projectColorLightGrey;
         width: auto;
         }

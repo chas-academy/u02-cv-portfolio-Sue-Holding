@@ -24,6 +24,26 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 390px) {
+  .flex {
+    font-size: 16px;
+  }
+  .grid {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  .flex {
+    font-size: 30px;
+  }
+  .grid {
+    font-size: 22px;
+  }
+}
 @media (max-width: 390px) {
   .nav-bar-flex {
     display: flex;
@@ -34,25 +54,7 @@ body {
     background-color: #af6b6e;
     padding: 20px;
     color: white;
-  }
-  .nav-bar-flex body {
     font-size: 16px;
-  }
-}
-@media (max-width: 390px) and (max-width: 390px) {
-  .nav-bar-flex .flex {
-    font-size: 16px;
-  }
-  .nav-bar-flex .grid {
-    font-size: 12px;
-  }
-}
-@media (max-width: 390px) and (min-width: 1280px) {
-  .nav-bar-flex .flex {
-    font-size: 30px;
-  }
-  .nav-bar-flex .grid {
-    font-size: 22px;
   }
 }
 @media (any-hover: hover) {
@@ -67,28 +69,8 @@ body {
     grid-template-rows: repeat(2, 1fr);
     background-color: #af6b6e;
     width: 100%;
-  }
-  .header-grid body {
-    font-size: 16px;
-  }
-}
-@media (max-width: 390px) and (max-width: 390px) {
-  .header-grid .flex {
-    font-size: 16px;
-  }
-  .header-grid .grid {
     font-size: 12px;
   }
-}
-@media (max-width: 390px) and (min-width: 1280px) {
-  .header-grid .flex {
-    font-size: 30px;
-  }
-  .header-grid .grid {
-    font-size: 22px;
-  }
-}
-@media (max-width: 390px) {
   .photo {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
@@ -111,30 +93,10 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
+    font-size: 12px;
     background-color: rgb(225, 225, 225);
     width: 100%;
   }
-  .grid-container body {
-    font-size: 16px;
-  }
-}
-@media (max-width: 390px) and (max-width: 390px) {
-  .grid-container .flex {
-    font-size: 16px;
-  }
-  .grid-container .grid {
-    font-size: 12px;
-  }
-}
-@media (max-width: 390px) and (min-width: 1280px) {
-  .grid-container .flex {
-    font-size: 30px;
-  }
-  .grid-container .grid {
-    font-size: 22px;
-  }
-}
-@media (max-width: 390px) {
   .education {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -194,25 +156,7 @@ body {
     background-color: #af6b6e;
     padding: 40px;
     color: white;
-  }
-  .nav-bar-flex body {
-    font-size: 16px;
-  }
-}
-@media (min-width: 1280px) and (max-width: 390px) {
-  .nav-bar-flex .flex {
-    font-size: 16px;
-  }
-  .nav-bar-flex .grid {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1280px) and (min-width: 1280px) {
-  .nav-bar-flex .flex {
     font-size: 30px;
-  }
-  .nav-bar-flex .grid {
-    font-size: 22px;
   }
 }
 @media (min-width: 1280px) {
@@ -223,28 +167,8 @@ body {
     background-color: #af6b6e;
     padding: 50px;
     width: auto;
-  }
-  .header-grid body {
-    font-size: 16px;
-  }
-}
-@media (min-width: 1280px) and (max-width: 390px) {
-  .header-grid .flex {
-    font-size: 16px;
-  }
-  .header-grid .grid {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1280px) and (min-width: 1280px) {
-  .header-grid .flex {
-    font-size: 30px;
-  }
-  .header-grid .grid {
     font-size: 22px;
   }
-}
-@media (min-width: 1280px) {
   .photo {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -267,30 +191,10 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+    font-size: 22px;
     background-color: rgb(225, 225, 225);
     width: auto;
   }
-  .grid-container body {
-    font-size: 16px;
-  }
-}
-@media (min-width: 1280px) and (max-width: 390px) {
-  .grid-container .flex {
-    font-size: 16px;
-  }
-  .grid-container .grid {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1280px) and (min-width: 1280px) {
-  .grid-container .flex {
-    font-size: 30px;
-  }
-  .grid-container .grid {
-    font-size: 22px;
-  }
-}
-@media (min-width: 1280px) {
   .education {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -341,26 +245,7 @@ body {
   }
 }
 body {
-  width: auto;
-}
-body body {
   font-size: 16px;
-}
-@media (max-width: 390px) {
-  body .flex {
-    font-size: 16px;
-  }
-  body .grid {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1280px) {
-  body .flex {
-    font-size: 30px;
-  }
-  body .grid {
-    font-size: 22px;
-  }
 }
 
 header {

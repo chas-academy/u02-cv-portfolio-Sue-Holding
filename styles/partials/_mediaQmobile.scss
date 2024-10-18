@@ -1,5 +1,5 @@
 @use "projectColors" as *;
-@use "fontSizes" as *;
+@use "fontSizes" as font-size;
 
 // styling for media queries 
 
@@ -17,7 +17,7 @@
     background-color: $projectColorDarkPink; 
     padding: 20px;
     color: $projectColorWhite;
-    font-size: $fontSizeFlexMobile;
+    font-size: font-size.$fontSizeFlexMobile;
     }
 } 
 
@@ -64,7 +64,7 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    @include fontSizes.font-size;
+    font-size: font-size.$fontSizeGridMobile;
     background-color: $projectColorLightGrey;
     width: 100%;
     }

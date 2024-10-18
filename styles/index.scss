@@ -3,12 +3,12 @@
 @use "partials/generalFlexGrid" as *;
 @use "partials/mediaQmobile" as *;
 @use "partials/mediaQLaptop" as *;
-@use "partials/fontSizes" as *;
+@use "partials/fontSizes" as font-size;
 
 // sass styling
 
 body {
-    font-size: $fontSizeBody;
+    font-size: font-size.$fontSizeBody;
 }
 
 header {
