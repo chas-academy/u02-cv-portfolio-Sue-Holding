@@ -87,6 +87,7 @@ body {
 @media (max-width: 390px) {
   .grid-container {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     padding: 20px;
@@ -149,6 +150,7 @@ body {
 @media (min-width: 1280px) {
   .nav-bar-flex {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
@@ -322,4 +324,7 @@ tbody {
   a:hover {
     color: blueviolet;
   }
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }/*# sourceMappingURL=index.css.map */
