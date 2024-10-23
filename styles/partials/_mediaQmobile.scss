@@ -19,6 +19,16 @@
     color: $projectColorWhite;
     font-size: font-size.$fontSizeFlexMobile;
     }
+    .box {
+        flex: 0 0 30%; /* Adjust width to fit four boxes per line */
+        margin: 10px; /* Add margin for spacing */
+        height: 25px;
+        background-color: $projectColorDarkPink; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $projectColorWhite;
+    }
 } 
 
 @media (any-hover: hover) {

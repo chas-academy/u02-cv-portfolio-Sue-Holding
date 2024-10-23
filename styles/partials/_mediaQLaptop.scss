@@ -16,9 +16,19 @@
         flex-direction: row;
         color: $projectColorWhite;
         background-color: $projectColorDarkPink; 
-        padding: 40px;
+        padding: 20px;
         color: $projectColorWhite;
         font-size: font-size.$fontSizeFlexLaptop;
+        }
+        .box {
+            flex: 0 0 ; /* Adjust width to fit four boxes per line */
+            
+            height: 25px;
+            background-color: $projectColorDarkPink; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $projectColorWhite;
         }
     } 
     

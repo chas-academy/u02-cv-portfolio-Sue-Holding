@@ -13,9 +13,9 @@ $fontSizeFlexLaptop: 30px;
 $fontSizeGridLaptop: 22px;
 
 
-body {
+ body {
     font-size: $fontSizeBody;
-    }
+  }
 
 @media (max-width: 390px) {
     .flex {

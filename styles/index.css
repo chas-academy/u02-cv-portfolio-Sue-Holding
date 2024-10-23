@@ -11,8 +11,19 @@
   height: auto;
   justify-content: space-between;
   color: white;
-  background-color: #af6b6e;
+  background-color: #864648;
   padding: 20px;
+}
+
+.box {
+  flex: 0 0 30%; /* Adjust width to fit four boxes per line */
+  margin: 10px; /* Add margin for spacing */
+  height: 25px;
+  background-color: #864648;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .grid-container {
@@ -51,10 +62,20 @@ body {
     flex: auto;
     flex-direction: column;
     color: white;
-    background-color: #af6b6e;
+    background-color: #864648;
     padding: 20px;
     color: white;
     font-size: 16px;
+  }
+  .box {
+    flex: 0 0 30%; /* Adjust width to fit four boxes per line */
+    margin: 10px; /* Add margin for spacing */
+    height: 25px;
+    background-color: #864648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 }
 @media (any-hover: hover) {
@@ -67,7 +88,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    background-color: #af6b6e;
+    background-color: #864648;
     width: 100%;
     font-size: 12px;
   }
@@ -155,10 +176,19 @@ body {
     justify-content: space-between;
     flex-direction: row;
     color: white;
-    background-color: #af6b6e;
-    padding: 40px;
+    background-color: #864648;
+    padding: 20px;
     color: white;
     font-size: 30px;
+  }
+  .box {
+    flex: 0 0; /* Adjust width to fit four boxes per line */
+    height: 25px;
+    background-color: #864648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 }
 @media (min-width: 1280px) {
@@ -166,7 +196,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    background-color: #af6b6e;
+    background-color: #864648;
     padding: 50px;
     width: auto;
     font-size: 22px;
@@ -252,14 +282,14 @@ body {
 
 header {
   color: white;
-  background-color: #af6b6e;
+  background-color: #864648;
   width: 100%;
   height: 100%;
   padding: 20px;
 }
 
 .header-grid { /*header gradiant styling */
-  background: linear-gradient(rgb(200, 200, 200), #af6b6e);
+  background: linear-gradient(rgb(200, 200, 200), #864648);
 }
 
 .about-me, .title {
@@ -286,13 +316,13 @@ a {
 caption {
   font-size: 150%;
   font-weight: bold;
-  color: #af6b6e;
+  color: #864648;
   text-align: left;
   padding-left: 20px;
 }
 
 .special, h2, h3 {
-  color: #af6b6e;
+  color: #864648;
 }
 
 a {
