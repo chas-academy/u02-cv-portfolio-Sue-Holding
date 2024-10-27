@@ -1,5 +1,6 @@
 @use "projectColors" as *;
 @use "fontSizes" as font-size;
+@use "icons" as *;
 
 // styling for media queries 
 
@@ -9,28 +10,31 @@
 
 @media (min-width: 1280px) {
     .nav-bar-flex {
-        display: flex;
+        display: flex; /* Stack icon and text */
+        align-items: center; /* Center align */
+        text-decoration: none; /* Remove underline */
         flex-wrap: wrap;
-        width: 100%;
-        justify-content:space-between; 
         flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around; 
         color: $projectColorWhite;
         background-color: $projectColorDarkPink; 
         padding: 20px;
         color: $projectColorWhite;
         font-size: font-size.$fontSizeFlexLaptop;
         }
-        .box {
-            flex: 0 0 ; /* Adjust width to fit four boxes per line */
-            
-            height: 25px;
-            background-color: $projectColorDarkPink; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $projectColorWhite;
-        }
     } 
+
+@media (min-width: 1280px) {
+    .layer a .material-icons{
+        font-size: 75px;
+        width: 75px;
+        height: 75px; 
+        transition: transform 0.3s;
+        display: block; /* Show text on hover */
+    }
+}
     
     // grid styling 
     

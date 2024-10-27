@@ -2,33 +2,56 @@
   box-sizing: border-box;
 }
 
-.nav-bar-flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex: auto;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-  justify-content: space-between;
-  color: white;
-  background-color: #864648;
-  padding: 20px;
-}
-
-.box {
-  flex: 0 0 30%; /* Adjust width to fit four boxes per line */
-  margin: 10px; /* Add margin for spacing */
-  height: 25px;
-  background-color: #864648;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
 .grid-container {
   background-color: rgb(225, 225, 225);
   padding: 20px;
+}
+
+.nav-bar-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #864648;
+  padding: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.layer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icons .layer a .material-icons .icon-text {
+  display: flex; /* Add this line to enable flexbox for the icons */
+  flex-direction: row; /* Ensure the icons are arranged in a row */
+  justify-content: space-between; /* Optional: Adjust spacing between icons */
+  align-items: center; /* Optional: Align items vertically centered */
+}
+
+.nav-bar-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons .layer {
+  display: flex;
+  justify-content: space-around; /* Ensure even spacing between icons */
+  width: 100%; /* Ensure the icons take full width */
+  flex-direction: row;
 }
 
 body {
@@ -55,27 +78,99 @@ body {
     font-size: 22px;
   }
 }
+.material-icons {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 75px;
+}
+
+.layer {
+  width: 100%;
+  transition: transform 0.3s;
+  position: relative; /* Added for positioning text */
+}
+
+.layer a {
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  align-items: center; /* Center align */
+  text-decoration: none; /* Remove underline */
+  flex: 1;
+}
+
+@media (hover: hover) {
+  .layer a .material-icons:hover {
+    transform: rotate(-35deg) skew(20deg);
+  }
+}
+.icon-text {
+  display: none; /* Initially hide text */
+  font-size: 20px; /* Adjust font size */
+  margin-top: 5px; /* Space between icon and text */
+}
+
+.layer a:hover .icon-text {
+  display: block; /* Show text on hover */
+}
+
+.material-icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+.layer .material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 @media (max-width: 390px) {
   .nav-bar-flex {
     display: flex;
     flex-wrap: wrap;
-    flex: auto;
     flex-direction: column;
+    align-items: stretch;
     color: white;
     background-color: #864648;
     padding: 20px;
     color: white;
     font-size: 16px;
   }
-  .box {
-    flex: 0 0 30%; /* Adjust width to fit four boxes per line */
-    margin: 10px; /* Add margin for spacing */
-    height: 25px;
-    background-color: #864648;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+}
+@media (max-width: 390px) {
+  .layer a .material-icons {
+    font-size: 55px;
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s;
+    display: block; /* Show text on hover */
   }
 }
 @media (any-hover: hover) {
@@ -108,7 +203,6 @@ body {
 @media (max-width: 390px) {
   .grid-container {
     display: grid;
-    flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     padding: 20px;
@@ -170,25 +264,28 @@ body {
 }
 @media (min-width: 1280px) {
   .nav-bar-flex {
-    display: flex;
+    display: flex; /* Stack icon and text */
+    align-items: center; /* Center align */
+    text-decoration: none; /* Remove underline */
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
     color: white;
     background-color: #864648;
     padding: 20px;
     color: white;
     font-size: 30px;
   }
-  .box {
-    flex: 0 0; /* Adjust width to fit four boxes per line */
-    height: 25px;
-    background-color: #864648;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+}
+@media (min-width: 1280px) {
+  .layer a .material-icons {
+    font-size: 75px;
+    width: 75px;
+    height: 75px;
+    transition: transform 0.3s;
+    display: block; /* Show text on hover */
   }
 }
 @media (min-width: 1280px) {
@@ -354,7 +451,4 @@ tbody {
   a:hover {
     color: blueviolet;
   }
-}
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }/*# sourceMappingURL=index.css.map */
