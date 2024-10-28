@@ -1,3 +1,4 @@
+@use "projectColors" as *;
 // nav bar icon styling
 
 $fontSizeIcon: 75px;
@@ -36,6 +37,7 @@ $fontSizeIconText: 20px;
 @media (hover: hover) {
     .layer a .material-icons:hover  {
     transform: rotate(-35deg) skew(20deg);
+    color: $projectIconHoverColor;
     }
 }
 
@@ -47,6 +49,7 @@ $fontSizeIconText: 20px;
 
   .layer a:hover .icon-text {
     display: block; /* Show text on hover */
+    color: $projectIconHoverColor;
   }
   
 .material-icons a .layer span {

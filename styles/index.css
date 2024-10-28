@@ -100,6 +100,7 @@ body {
 @media (hover: hover) {
   .layer a .material-icons:hover {
     transform: rotate(-35deg) skew(20deg);
+    color: rgb(255, 0, 89);
   }
 }
 .icon-text {
@@ -110,6 +111,7 @@ body {
 
 .layer a:hover .icon-text {
   display: block; /* Show text on hover */
+  color: rgb(255, 0, 89);
 }
 
 .material-icons a .layer span {
@@ -175,7 +177,7 @@ body {
 }
 @media (any-hover: hover) {
   a:hover {
-    color: blueviolet;
+    color: rgb(255, 0, 89);
   }
 }
 @media (max-width: 390px) {
@@ -385,6 +387,10 @@ header {
   padding: 20px;
 }
 
+.photo {
+  border-radius: 75%;
+}
+
 .header-grid { /*header gradiant styling */
   background: linear-gradient(rgb(200, 200, 200), #864648);
 }
@@ -407,7 +413,7 @@ p, li, td {
 }
 
 a {
-  color: blueviolet;
+  color: rgb(255, 0, 89);
 }
 
 caption {
@@ -449,6 +455,6 @@ tbody {
 
 @media (any-hover: hover) {
   a:hover {
-    color: blueviolet;
+    color: rgb(255, 0, 89);
   }
 }/*# sourceMappingURL=index.css.map */

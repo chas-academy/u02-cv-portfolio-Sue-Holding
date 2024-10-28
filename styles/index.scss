@@ -20,6 +20,11 @@ header {
     padding: 20px;
 }
 
+// photo styling
+.photo {
+    border-radius: 75%;
+}
+
 // class styling
 .header-grid { /*header gradiant styling */
     background: linear-gradient($projectColorDirtyWhite, $projectColorDarkPink); 
