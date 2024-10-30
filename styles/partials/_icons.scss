@@ -89,12 +89,12 @@ $fontSizeIconText: 20px;
     direction: ltr;
   
     /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
+    // -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
   
     /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
+    // -moz-osx-font-smoothing: grayscale;
   
     /* Support for IE. */
     font-feature-settings: 'liga';
